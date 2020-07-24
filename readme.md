@@ -2,8 +2,8 @@
 
 ## Description
 
-It's Reddit article scrapper by upvoting and filtered promoted
-We could choose search duration and You do not need to move each site anymore!
+- It's Reddit article scrapper by upvoting and filtered promoted
+- We could choose search duration and You do not need to move each site anymore!
 
 ## Technologies Used
 
