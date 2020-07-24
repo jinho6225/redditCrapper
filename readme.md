@@ -18,4 +18,4 @@ Try the application live at [https://reddit--jinho6225.repl.co/](https://reddit-
 
 ## Preview
 
-![preview](/reddit.gif)
+![preview](/updated_reddit.gif)
