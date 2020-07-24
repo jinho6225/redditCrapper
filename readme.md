@@ -3,7 +3,7 @@
 ## Description
 
 It's Reddit article scrapper by upvoting and filtered promoted
-You do not need to move each site anymore!
+We could choose search duration and You do not need to move each site anymore!
 
 ## Technologies Used
 
@@ -13,8 +13,8 @@ You do not need to move each site anymore!
 - Beautiful Soup
 
 ## Live Demo
-Try the application live at [https://reddit--jinho6225.repl.co/](https://reddit--jinho6225.repl.co/)
 
+Try the application live at [https://reddit--jinho6225.repl.co/](https://reddit--jinho6225.repl.co/)
 
 ## Preview
 
