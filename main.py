@@ -4,15 +4,6 @@ from bs4 import BeautifulSoup
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'}
 
-"""
-All subreddits have the same url:
-i.e : https://reddit.com/r/javascript
-You can add more subreddits to the list, just make sure they exist.
-To make a request, use this url:
-https://www.reddit.com/r/{subreddit}/top/?t=month
-This will give you the top posts in per month.
-"""
-
 app = Flask("reddit")
 
 @app.route("/")
@@ -23,10 +14,12 @@ def home():
 def read():
   big_list = []
   target = request.args
+  duration = dict(target)["duration"]
+  lst = list(target)[1:]
   reading = ""
-  for lang in list(target):
+  for lang in lst:
     reading += "r/" + lang + " "
-    URL = f"https://www.reddit.com/r/{lang}/top/?t=month"
+    URL = f"https://www.reddit.com/r/{lang}/top/?t={duration}"
     r = requests.get(URL, headers=headers)
     soup = BeautifulSoup(r.text, 'html.parser')
     div = soup.find("div", {"class": "_1OVBBWLtHoSPfGCRaPzpTf"}).find("div", {"class": "rpBJOHq2PR60pnwJlUyP0"})

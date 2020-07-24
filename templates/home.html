@@ -14,6 +14,12 @@
     <main>
         <form action="/read">
             <h4>Select the subreddits you're interested on:</h4>
+            <label for="duration">duration:</label>
+            <select id="duration" name="duration">
+                <option value="day">today</option>
+                <option value="week">this_week</option>
+                <option value="month">this_month</option>
+            </select>
             <ul>
                 <li>
                     <input type="checkbox" name="javascript" id="javascript">
